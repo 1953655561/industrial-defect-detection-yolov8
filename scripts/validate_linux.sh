@@ -49,11 +49,15 @@ cv2.imwrite("/tmp/synth_defect.jpg", img)
 PY
   IMG=/tmp/synth_defect.jpg
 fi
+IMG_DIR="$(dirname "$IMG")"
 python scripts/onnx_infer.py --model models/y8n_aug_onnx.onnx --image "$IMG"
 
 echo "== latency benchmark (CPU, 50 runs) =="
+# --images must point at a directory that actually contains a jpg, otherwise the
+# benchmark has no sample image (this is what a fresh clone without the dataset has)
 python scripts/onnx_infer.py \
   --model models/y8n_aug_onnx.onnx \
+  --images "$IMG_DIR" \
   --bench --runs 50 \
   --out-json reports/onnx_bench_linux.json
 
