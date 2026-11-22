@@ -184,7 +184,21 @@ python scripts/camera_calibration.py --square 18  # 读取 assets/calib_photos/*
 
 > 真实相机标定需要打印棋盘格拍 12–15 张照片，照片放在 `assets/calib_photos/`（见该目录 README）。
 
-## 9. 项目结构
+## 9. 可视化
+
+| 数据集与标注 | 训练预测 vs 标注 |
+| --- | --- |
+| ![dataset](screenshots/dataset_gt_samples.jpg) | ![pred](screenshots/pred_vs_gt.jpg) |
+
+| 每类标注框数量 | 每类 AP |
+| --- | --- |
+| ![dist](screenshots/class_distribution.png) | ![ap](reports/per_class_ap_y8n_aug.png) |
+
+| 传统视觉 vs 标注（左：GT，中：传统视觉候选，右：二值化掩膜） | ONNX 推理结果 |
+| --- | --- |
+| ![ocv](screenshots/opencv_baseline_compare.jpg) | ![onnx](screenshots/onnx_infer_crazing_1.jpg) |
+
+## 10. 项目结构
 
 ```
 scripts/
@@ -208,7 +222,7 @@ models/
   y8n_aug_onnx.onnx      导出的 ONNX 模型（提交进仓库，审阅者可直接推理）
 ```
 
-## 10. 局限与诚实的说明
+## 11. 局限与诚实的说明
 
 1. 划分是**随机分层划分**，未按钢板/母卷分组，同一母卷的图像可能同时出现在 train/val，指标可能偏高；
 2. 数据集只有 1800 张、类别/纹理相似度高，模型换产线/换光照需要重新标注与微调；
@@ -216,7 +230,7 @@ models/
 4. 传统视觉基线是"能跑通、可量化"的对照，不是工业级算法；
 5. 相机标定的真实重投影误差需用实拍照片复现，仓库里只有代码自测结果。
 
-## 11. 参考
+## 12. 参考
 
 - NEU-DET: Song K., Yan Y. *A noise robust method based on completed local binary patterns for hot-rolled steel strip surface defects*, Applied Surface Science, 2013.
 - Ultralytics YOLOv8: https://github.com/ultralytics/ultralytics
