@@ -165,6 +165,13 @@ python scripts/camera_calibration.py --square 18  # 读取 assets/calib_photos/*
 
 - `findChessboardCornersSB` + `cornerSubPix` 提角点，`calibrateCamera`（张正友标定法）求内参/畸变；
 - 输出 `reports/camera_calibration.json`（内参矩阵、畸变系数、每视角/整体重投影误差）与去畸变前后对比图；
+- **真实照片验证（公开样例集）**：在 OpenCV 官方标定样例图像集
+  （`assets/calib_sample_opencv/`，13 张 640×480 真实棋盘照片，Apache-2.0）上跑同一流程：
+  **13/13 视角成功提角，RMS 重投影误差 {{calib_sample_rms}} px**（单视角均值 {{calib_sample_mean_px}} px、
+  最大 {{calib_sample_max_px}} px），内参 fx≈fy≈532 px、主点接近图像中心、k1≈-0.31 的桶形畸变，
+  结果见 `reports/camera_calibration_sample.json`；
+- 说明：该图像集是**别人的相机**实拍的公开数据，只用于在真实照片上验证流程是否可用；
+  要标定自己的相机，把手机拍的 12–15 张照片放进 `assets/calib_photos/`（见该目录 README）重跑即可；
 - `--synthetic` 模式用渲染的已知相机图像做代码自测（RMS 0.076 px，焦距反推误差 0.25%），
   **仅用于验证代码路径，不作为真实相机标定结果**。
 

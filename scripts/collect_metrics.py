@@ -244,6 +244,13 @@ def main() -> int:
     else:
         out["calib_rms"] = ""
         out["calib_views"] = ""
+    # real-photo validation on the public OpenCV sample set (not the applicant's own camera)
+    sample = load("camera_calibration_sample.json")
+    if sample:
+        out["calib_sample_rms"] = f"{sample.get('rms_reprojection_error_px', 0):.3f}"
+        out["calib_sample_views"] = str(sample.get("n_views", ""))
+        out["calib_sample_mean_px"] = f"{sample.get('mean_per_view_error_px', 0):.3f}"
+        out["calib_sample_max_px"] = f"{sample.get('max_per_view_error_px', 0):.3f}"
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")

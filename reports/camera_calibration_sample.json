@@ -1,0 +1,126 @@
+{
+  "rms_reprojection_error_px": 0.23050657816090903,
+  "mean_per_view_error_px": 0.1819004210141989,
+  "max_per_view_error_px": 1.2679718732833862,
+  "camera_matrix": [
+    [
+      532.3747764115776,
+      0.0,
+      342.10813924427435
+    ],
+    [
+      0.0,
+      532.3447739258338,
+      232.88503116592233
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "dist_coeffs": [
+    -0.30808758132364605,
+    0.16532732588132032,
+    0.0008331726758923242,
+    0.0003340316698912566,
+    -0.049268784586888534
+  ],
+  "image_size_wh": [
+    640,
+    480
+  ],
+  "n_views": 13,
+  "per_view": [
+    {
+      "view": 0,
+      "mean_err_px": 0.15774796903133392,
+      "max_err_px": 0.5065443515777588
+    },
+    {
+      "view": 1,
+      "mean_err_px": 0.17219021916389465,
+      "max_err_px": 1.17414391040802
+    },
+    {
+      "view": 2,
+      "mean_err_px": 0.15379439294338226,
+      "max_err_px": 0.383681982755661
+    },
+    {
+      "view": 3,
+      "mean_err_px": 0.15920008718967438,
+      "max_err_px": 0.3073897957801819
+    },
+    {
+      "view": 4,
+      "mean_err_px": 0.14740663766860962,
+      "max_err_px": 0.2949443459510803
+    },
+    {
+      "view": 5,
+      "mean_err_px": 0.17615856230258942,
+      "max_err_px": 0.6412361264228821
+    },
+    {
+      "view": 6,
+      "mean_err_px": 0.256035715341568,
+      "max_err_px": 0.7429665923118591
+    },
+    {
+      "view": 7,
+      "mean_err_px": 0.20122402906417847,
+      "max_err_px": 0.47224298119544983
+    },
+    {
+      "view": 8,
+      "mean_err_px": 0.24548301100730896,
+      "max_err_px": 0.907251238822937
+    },
+    {
+      "view": 9,
+      "mean_err_px": 0.16051486134529114,
+      "max_err_px": 0.7270828485488892
+    },
+    {
+      "view": 10,
+      "mean_err_px": 0.1502414345741272,
+      "max_err_px": 0.47788122296333313
+    },
+    {
+      "view": 11,
+      "mean_err_px": 0.2061643749475479,
+      "max_err_px": 1.2679718732833862
+    },
+    {
+      "view": 12,
+      "mean_err_px": 0.17854417860507965,
+      "max_err_px": 0.8014171123504639
+    }
+  ],
+  "mode": "real_photos",
+  "square_size_mm": 1.0,
+  "pattern_inner": [
+    9,
+    6
+  ],
+  "source_images": [
+    "left01.jpg",
+    "left02.jpg",
+    "left03.jpg",
+    "left04.jpg",
+    "left05.jpg",
+    "left06.jpg",
+    "left07.jpg",
+    "left08.jpg",
+    "left09.jpg",
+    "left11.jpg",
+    "left12.jpg",
+    "left13.jpg",
+    "left14.jpg"
+  ],
+  "dataset": "OpenCV official calibration samples left01-left14 (13 real photos, 640x480, 9x6 inner corners), https://github.com/opencv/opencv/tree/4.x/samples/data",
+  "license": "OpenCV repository, Apache-2.0",
+  "square_size_assumed": "1.0 arbitrary unit. For a planar target the camera matrix, distortion coefficients and reprojection error are independent of the assumed square size; only the translation vectors scale.",
+  "note": "Real photographs of a real (but NOT this laptop's) camera, used to validate the calibration pipeline on real data. It is not a calibration of the applicant's own camera; replace assets/calib_sample_opencv with own photos to calibrate a real one."
+}
