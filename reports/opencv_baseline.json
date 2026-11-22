@@ -1,0 +1,62 @@
+{
+  "params": {
+    "mode": "adaptive",
+    "clip": 2.0,
+    "blur": 5,
+    "block": 35,
+    "C": 5.0,
+    "close": 3,
+    "open": 2,
+    "min_area": 0.02,
+    "max_area": 0.9,
+    "min_ar": 0.05,
+    "max_ar": 20.0,
+    "bh": 15
+  },
+  "iou_threshold": 0.3,
+  "tp": 268,
+  "fp": 414,
+  "fn": 595,
+  "precision": 0.393,
+  "recall": 0.3105,
+  "f1": 0.3469,
+  "fp_per_image": 1.15,
+  "mean_ms_per_image": 1.242,
+  "per_class_recall": {
+    "crazing": 0.594,
+    "inclusion": 0.125,
+    "patches": 0.5955,
+    "pitted_surface": 0.0667,
+    "rolled-in_scale": 0.1057,
+    "scratches": 0.313
+  },
+  "per_class_gt": {
+    "crazing": 133,
+    "inclusion": 224,
+    "patches": 178,
+    "pitted_surface": 90,
+    "rolled-in_scale": 123,
+    "scratches": 115
+  },
+  "grid_search": {
+    "configs_tried": 624,
+    "train_images": 60,
+    "best_train_f1": 0.3741,
+    "best_train_params": {
+      "mode": "adaptive",
+      "clip": 2.0,
+      "blur": 5,
+      "block": 35,
+      "C": 5.0,
+      "close": 3,
+      "open": 2,
+      "min_area": 0.02,
+      "max_area": 0.9,
+      "min_ar": 0.05,
+      "max_ar": 20.0,
+      "bh": 15
+    }
+  },
+  "val_images": 360,
+  "note": "Traditional CV has no class head: matching is class-agnostic at IoU>=0.3; per_class_recall uses the GT class of matched candidates. Tuned on train subset only."
+}

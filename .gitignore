@@ -1,0 +1,24 @@
+# Dataset (third-party, does not fit in git) and local artifacts
+data/raw/
+data/neu_det/
+.venv/
+runs/
+*.pt
+__pycache__/
+*.pyc
+assets/calib_photos/*
+!assets/calib_photos/README.md
+*.log
+
+# generated per-machine (contains absolute dataset path)
+data/neu_det.yaml
+
+# third-party dataset archive (not redistributed)
+data/*.zip
+
+# NOTE: models/y8n_aug_onnx.onnx IS committed on purpose (12.8 MB):
+# reviewers and the CI workflow can run inference without retraining.
+
+# keep for the README:
+#   screenshots/*.jpg|png   (generated figures, public dataset only)
+#   reports/*.json|md       (metrics)

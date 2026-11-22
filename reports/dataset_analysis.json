@@ -1,0 +1,142 @@
+{
+  "dataset": "NEU-DET (public, Northeastern University; Kaggle mirror kaustubhdikshit/neu-surface-defect-database)",
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "seed": 42,
+  "val_ratio": 0.2,
+  "images_total": 1800,
+  "split": {
+    "train": 1440,
+    "val": 360
+  },
+  "split_per_class": {
+    "crazing": {
+      "train": 240,
+      "val": 60
+    },
+    "inclusion": {
+      "train": 240,
+      "val": 60
+    },
+    "patches": {
+      "train": 240,
+      "val": 60
+    },
+    "pitted_surface": {
+      "train": 240,
+      "val": 60
+    },
+    "rolled-in_scale": {
+      "train": 240,
+      "val": 60
+    },
+    "scratches": {
+      "train": 240,
+      "val": 60
+    }
+  },
+  "instances_total": 4189,
+  "instances_per_class": {
+    "crazing": 689,
+    "inclusion": 1011,
+    "patches": 881,
+    "pitted_surface": 432,
+    "rolled-in_scale": 628,
+    "scratches": 548
+  },
+  "boxes_dropped_as_degenerate_or_unknown": 0,
+  "boxes_per_image": {
+    "1": 483,
+    "2": 673,
+    "3": 390,
+    "4": 154,
+    "5": 59,
+    "6": 22,
+    "7": 9,
+    "8": 6,
+    "9": 4
+  },
+  "images_with_multiple_classes": 123,
+  "images_with_foreign_class_boxes": 123,
+  "multi_class_note": "NEU-DET images are grouped into 6 folders by dominant defect, but some images contain additional defect types in the annotations; these are genuine multi-label annotations, not label errors.",
+  "images_without_xml": [],
+  "xml_without_image": [],
+  "duplicate_annotation_files": {},
+  "duplicate_image_content": {
+    "24f39e0f91f95e4c785052ac4d3e49a6": [
+      "patches_101.jpg",
+      "patches_105.jpg"
+    ]
+  },
+  "duplicate_groups_split_leak": 0,
+  "box_area_ratio": {
+    "crazing": {
+      "mean": 0.2309013062409289,
+      "median": 0.2114,
+      "p10": 0.11622,
+      "p90": 0.3790800000000001
+    },
+    "patches": {
+      "mean": 0.1281889614074915,
+      "median": 0.092825,
+      "p10": 0.03135,
+      "p90": 0.278125
+    },
+    "inclusion": {
+      "mean": 0.07053041543026707,
+      "median": 0.0407,
+      "p10": 0.0124,
+      "p90": 0.17765
+    },
+    "pitted_surface": {
+      "mean": 0.5674711226851852,
+      "median": 0.5548,
+      "p10": 0.2011225,
+      "p90": 0.9702225
+    },
+    "rolled-in_scale": {
+      "mean": 0.14705720541401274,
+      "median": 0.1230125,
+      "p10": 0.045365,
+      "p90": 0.27735750000000015
+    },
+    "scratches": {
+      "mean": 0.09154936131386861,
+      "median": 0.0747125,
+      "p10": 0.029235,
+      "p90": 0.16335
+    }
+  },
+  "box_aspect_wh": {
+    "crazing": {
+      "mean": 1.8867800379757689,
+      "median": 1.794871794871795
+    },
+    "patches": {
+      "mean": 0.8341633570555541,
+      "median": 0.7258064516129032
+    },
+    "inclusion": {
+      "mean": 0.44949567634661053,
+      "median": 0.3673469387755102
+    },
+    "pitted_surface": {
+      "mean": 0.7737847748521551,
+      "median": 0.7587287891860799
+    },
+    "rolled-in_scale": {
+      "mean": 1.1340111972166413,
+      "median": 0.9783016654937837
+    },
+    "scratches": {
+      "mean": 2.205421144997587,
+      "median": 0.1777046783625731
+    }
+  }
+}

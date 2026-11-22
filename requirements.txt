@@ -1,0 +1,20 @@
+# Python 3.12 · Windows 11 · tested on RTX 4060 Laptop (8 GB) + CUDA 12.4
+#
+# 1) PyTorch CUDA 12.4 wheels are not on PyPI, install them first:
+#    pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+# 2) Then the rest:
+#    pip install -r requirements.txt
+#
+# CPU-only machine: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# and everything below still works (training will be much slower).
+
+ultralytics==8.4.216
+opencv-python==5.1.0.95
+onnx==1.23.2
+onnxruntime==1.32.0
+numpy==2.5.4
+pandas==3.1.1
+pillow==13.0.0
+PyYAML==6.0.4
+matplotlib==3.11.2
+scikit-image==0.26.0

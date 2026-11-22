@@ -1,0 +1,99 @@
+{
+  "model": "E:\\xz\\cv_defect_det\\models\\y8n_aug_onnx.onnx",
+  "model_size_mb": 12.78,
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "output_shape": [
+    1,
+    10,
+    8400
+  ],
+  "providers_used": [
+    "CPUExecutionProvider"
+  ],
+  "conf": 0.25,
+  "iou": 0.45,
+  "imgsz": 640,
+  "session_run": {
+    "n_runs": 100,
+    "mean_ms": 25.848468999611214,
+    "p50_ms": 25.831199949607253,
+    "p95_ms": 27.02272001770325,
+    "min_ms": 24.801400024443865,
+    "max_ms": 28.039900003932416,
+    "fps_from_mean": 38.687010825091456
+  },
+  "end_to_end": {
+    "mean_ms": 32.711263006785884,
+    "p50_ms": 32.44785004062578,
+    "p95_ms": 35.23878505220637,
+    "fps_from_mean": 30.570510218225206
+  },
+  "cross_check": {
+    "images": 8,
+    "all_agree": true,
+    "matched_ratio": 1.0,
+    "detail": [
+      {
+        "image": "crazing_1.jpg",
+        "onnx_dets": 1,
+        "pt_dets": 1,
+        "matched_iou95": 1,
+        "agree": true
+      },
+      {
+        "image": "crazing_10.jpg",
+        "onnx_dets": 2,
+        "pt_dets": 2,
+        "matched_iou95": 2,
+        "agree": true
+      },
+      {
+        "image": "crazing_102.jpg",
+        "onnx_dets": 4,
+        "pt_dets": 4,
+        "matched_iou95": 4,
+        "agree": true
+      },
+      {
+        "image": "crazing_107.jpg",
+        "onnx_dets": 1,
+        "pt_dets": 1,
+        "matched_iou95": 1,
+        "agree": true
+      },
+      {
+        "image": "crazing_108.jpg",
+        "onnx_dets": 1,
+        "pt_dets": 1,
+        "matched_iou95": 1,
+        "agree": true
+      },
+      {
+        "image": "crazing_118.jpg",
+        "onnx_dets": 2,
+        "pt_dets": 2,
+        "matched_iou95": 2,
+        "agree": true
+      },
+      {
+        "image": "crazing_127.jpg",
+        "onnx_dets": 3,
+        "pt_dets": 3,
+        "matched_iou95": 3,
+        "agree": true
+      },
+      {
+        "image": "crazing_129.jpg",
+        "onnx_dets": 1,
+        "pt_dets": 1,
+        "matched_iou95": 1,
+        "agree": true
+      }
+    ]
+  }
+}

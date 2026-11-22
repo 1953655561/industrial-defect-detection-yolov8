@@ -1,0 +1,76 @@
+{
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "label_files": 1800,
+  "per_split": {
+    "train": 1440,
+    "val": 360
+  },
+  "total_boxes": 4189,
+  "instances_per_class": {
+    "crazing": 689,
+    "patches": 881,
+    "inclusion": 1011,
+    "pitted_surface": 432,
+    "rolled-in_scale": 628,
+    "scratches": 548
+  },
+  "empty_label_images": 0,
+  "empty_label_examples": [],
+  "near_duplicate_box_pairs": 3,
+  "errors": {},
+  "warnings": {
+    "near_duplicate_boxes": {
+      "count": 3,
+      "examples": [
+        "train/crazing_120",
+        "train/inclusion_62",
+        "train/patches_198"
+      ]
+    }
+  },
+  "info": {
+    "foreign_class_boxes": {
+      "count": 130,
+      "examples": [
+        "train/crazing_104:3 -> patches (file prefix crazing)",
+        "train/crazing_105:3 -> inclusion (file prefix crazing)",
+        "train/crazing_112:2 -> patches (file prefix crazing)",
+        "train/patches_168:3 -> inclusion (file prefix patches)",
+        "train/patches_168:4 -> inclusion (file prefix patches)"
+      ]
+    }
+  },
+  "box_size_mean": {
+    "crazing": {
+      "w": 0.625732946298984,
+      "h": 0.37674891146589257
+    },
+    "patches": {
+      "w": 0.28119182746878546,
+      "h": 0.41685584562996597
+    },
+    "inclusion": {
+      "w": 0.142542037586548,
+      "h": 0.42548961424332343
+    },
+    "pitted_surface": {
+      "w": 0.6366898148148147,
+      "h": 0.864826388888889
+    },
+    "rolled-in_scale": {
+      "w": 0.3653503184713376,
+      "h": 0.3890366242038217
+    },
+    "scratches": {
+      "w": 0.3066514598540146,
+      "h": 0.5749087591240876
+    }
+  }
+}

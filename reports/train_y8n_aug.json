@@ -1,0 +1,13 @@
+{
+  "name": "y8n_aug",
+  "model": "yolov8n.pt",
+  "wall_seconds": 2867.6,
+  "epochs_logged": 100,
+  "best_epoch": 97,
+  "best_mAP50": 0.76709,
+  "best_mAP50_95": 0.43573,
+  "best_precision": 0.69612,
+  "best_recall": 0.72613,
+  "final_mAP50": 0.76408,
+  "train_seconds_logged": 2854.12
+}

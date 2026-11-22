@@ -1,0 +1,36 @@
+{
+  "model": "models/y8n_aug_onnx.onnx",
+  "model_size_mb": 12.78,
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "output_shape": [
+    1,
+    10,
+    8400
+  ],
+  "providers_used": [
+    "CPUExecutionProvider"
+  ],
+  "conf": 0.25,
+  "iou": 0.45,
+  "imgsz": 640,
+  "session_run": {
+    "n_runs": 50,
+    "mean_ms": 32.722968939999646,
+    "p50_ms": 31.93053449999894,
+    "p95_ms": 36.46408444999594,
+    "min_ms": 30.410439999997152,
+    "max_ms": 38.77465899999777,
+    "fps_from_mean": 30.559574280487364
+  },
+  "end_to_end": {
+    "mean_ms": 48.28960085999994,
+    "p50_ms": 47.32430649999486,
+    "p95_ms": 54.153983749995405,
+    "fps_from_mean": 20.708392328592154
+  }
+}

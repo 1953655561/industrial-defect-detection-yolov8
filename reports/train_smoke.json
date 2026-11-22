@@ -1,0 +1,13 @@
+{
+  "name": "smoke",
+  "model": "yolov8n.pt",
+  "wall_seconds": 278.0,
+  "epochs_logged": 3,
+  "best_epoch": 3,
+  "best_mAP50": 0.5452,
+  "best_mAP50_95": 0.2577,
+  "best_precision": 0.66695,
+  "best_recall": 0.47238,
+  "final_mAP50": 0.5452,
+  "train_seconds_logged": 250.229
+}
