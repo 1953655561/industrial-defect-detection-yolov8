@@ -1,5 +1,8 @@
 # 工业表面缺陷检测：YOLOv8 + OpenCV + ONNX（NEU-DET）
 
+[![onnx-linux-cpu](https://github.com/1953655561/industrial-defect-detection-yolov8/actions/workflows/onnx-linux.yml/badge.svg)](https://github.com/1953655561/industrial-defect-detection-yolov8/actions/workflows/onnx-linux.yml)
+[![license: code MIT-ready](https://img.shields.io/badge/code-for%20portfolio-lightgrey)](#)
+
 工业视觉求职项目：在公开钢材表面缺陷数据集 **NEU-DET** 上跑通「数据准备 → YOLOv8 训练/评估 → ONNX 导出部署」完整流程，
 并实现一个 **OpenCV 传统视觉基线**做定量对比，说明为什么这类任务需要深度学习。
 
